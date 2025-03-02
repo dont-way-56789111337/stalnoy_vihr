@@ -1,0 +1,161 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
+
+:root {
+    --container-width: 1300px;
+    --container-padding: 10px;
+    --nav-margin: 20px;
+    --nav-padding: 0 30px 0 30px;
+    --nav-border: 2px solid #FF6464;
+    --secondary: rgba(48, 48, 48, 0.75);
+    --ternary: #FF6464;
+}
+
+body {
+    font-family: "Jost", serif;
+    letter-spacing: 0.2px;
+    line-height: 122%;
+    background-color: #F6F6F6;
+    color: #303030;
+}
+
+body h1, h2, h3, h4, h5, h6, p {
+    line-height: 122%;
+}
+
+/* none пригодится, чтобы сайт верстать по частям */
+.none {
+    display: none !important;
+}
+
+.container {
+    min-width: var(--container-width);
+    padding: 0 var(--container-padding) 0;
+}
+
+.block {
+    width: var(--container-width);
+    height: 110px;
+    padding: var(--nav-padding);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Header */
+
+.header {
+    max-width: var(--container-width);
+    min-height: 160px;
+    padding: var(--container-padding) 0 0;
+    margin: 0 auto 48px auto;
+}
+
+.header a {
+    color: inherit; 
+}
+
+.header__top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    min-height: 38px;
+    margin-bottom: 12px;
+}
+
+.header__top h4 {
+    font-size: 18px;
+}
+
+.header__top h5 {
+    font-size: 17px;
+    color: var(--secondary);
+}
+
+.header__top h6 {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.adres {
+    white-space: nowrap;
+    height: 21px;
+    margin: 8.5px 0;
+}
+
+.contact {
+    white-space: nowrap;
+    margin: 0 361px 0 321px;
+}
+
+.our-social-networks {
+    white-space: nowrap;
+    display: flex;
+}
+
+.our-social-networks img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.vk-logo {
+    margin: 5px 10px 3px 10px;
+}
+
+.tg-logo {
+    margin: 5px 0 3px 0;
+}
+
+.social-networks {
+    margin: 8.5px 0;
+}
+
+.header__bottom {
+    min-height: 110px;
+    margin: 0 -10px;
+}
+
+/* Nav */
+
+.nav {
+    display: flex;
+    column-gap: 80px;
+}
+
+.nav__logo {
+    font-size: 23px;
+    font-weight: 600;
+    float: left;
+}
+
+/* Logo */
+
+.nav__logo img {
+    height: 70px;
+    margin: 20px 0;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.nav__logo h2 {
+    height: 56px;
+    margin: 27px var(--nav-margin);
+    float: left;
+}
+
+.nav__list {
+    display: flex;
+    height: 29px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+    column-gap: 43px;
+    margin: 40.5px 0;
+    float: right;
+}
+
+.active {
+    color: var(--ternary);
+    border-bottom: var(--nav-border);
+}
