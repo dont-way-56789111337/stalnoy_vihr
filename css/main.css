@@ -5,22 +5,21 @@
     --container-width: 1300px;
     --container-padding: 10px;
     --nav-margin: 20px;
-    --nav-padding: 0 30px 0 30px;
-    --nav-border: 2px solid #FF6464;
+    --nav-padding: 0 30px;
+    --nav-border: 2px solid var(--ternary);
     --secondary: rgba(48, 48, 48, 0.75);
     --ternary: #FF6464;
 }
 
 body {
     font-family: "Jost", serif;
-    letter-spacing: 0.2px;
-    line-height: 122%;
     background-color: #F6F6F6;
     color: #303030;
 }
 
 body h1, h2, h3, h4, h5, h6, p {
     line-height: 122%;
+    letter-spacing: 0.2px;
 }
 
 /* none пригодится, чтобы сайт верстать по частям */
@@ -33,30 +32,26 @@ body h1, h2, h3, h4, h5, h6, p {
     padding: 0 var(--container-padding) 0;
 }
 
-.block {
-    width: var(--container-width);
-    height: 110px;
-    padding: var(--nav-padding);
-    border-radius: 10px;
-    background-color: #fff;
-}
 
 /* Header */
 
+
 .header {
+    position: relative;
     max-width: var(--container-width);
     min-height: 160px;
     padding: var(--container-padding) 0 0;
-    margin: 0 auto 48px auto;
+    margin: 0 auto;
 }
 
 .header a {
-    color: inherit; 
+    color: inherit;
 }
 
 .header__top {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: 400;
     min-height: 38px;
@@ -78,19 +73,27 @@ body h1, h2, h3, h4, h5, h6, p {
 }
 
 .adres {
+    position: absolute;
+    align-items: center;
     white-space: nowrap;
     height: 21px;
-    margin: 8.5px 0;
+    left: 10px;
 }
 
 .contact {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
     white-space: nowrap;
-    margin: 0 361px 0 321px;
+    
 }
 
 .our-social-networks {
-    white-space: nowrap;
+    position: absolute;
     display: flex;
+    align-items: center;
+    white-space: nowrap;
+    right: 10px;
 }
 
 .our-social-networks img {
@@ -119,43 +122,75 @@ body h1, h2, h3, h4, h5, h6, p {
 
 .nav {
     display: flex;
+    position: relative;
     column-gap: 80px;
 }
 
+.block {
+    display: flex;
+    align-items: center;
+    width: var(--container-width);
+    height: 110px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
 .nav__logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
     font-size: 23px;
     font-weight: 600;
-    float: left;
+    left: 30px;
 }
 
 /* Logo */
 
 .nav__logo img {
     height: 70px;
-    margin: 20px 0;
     width: 70px;
-    height: 70px;
-    float: left;
 }
 
 .nav__logo h2 {
     height: 56px;
-    margin: 27px var(--nav-margin);
-    float: left;
+    margin: 0 var(--nav-margin);
 }
 
 .nav__list {
+    position: absolute;
     display: flex;
+    align-items: center;
+    width: auto;
     height: 29px;
+    right: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 100%;
     column-gap: 43px;
-    margin: 40.5px 0;
-    float: right;
 }
 
-.active {
-    color: var(--ternary);
-    border-bottom: var(--nav-border);
+.nav__list a {
+    position: relative;
+    max-height: 29px;
 }
+
+.nav__list a.active {
+    color: var(--ternary);
+}
+
+.nav__list a.active::after,
+.nav__list a.inactive:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: var(--nav-border);
+    border-radius: 50px;
+}
+
+
+/* Main */
+
+
