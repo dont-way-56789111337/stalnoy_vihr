@@ -238,3 +238,38 @@ body a {
     color: #fff;
 }
 
+.bullets {
+    margin-top: 38px;
+    width: 550px;
+    height: 133px;
+}
+
+.desktop-bullets {
+    box-sizing: border-box;
+    float: left;
+    font-size: 20px;
+    width: 265px;
+    height: 60px;
+    padding-left: 28px;
+    background: url(./../img/main/bullet.svg) no-repeat;
+}
+
+.first-bullet {
+    width: 265px;
+    height: 40px;
+}
+
+.second-bullet {
+    width: 240px;
+    height: 20px;
+}
+
+.third-bullet {
+    width: 265px;
+    height: 60px;
+}
+
+.fourth-bullet {
+    width: 256px;
+    height: 60px;
+}
