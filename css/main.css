@@ -239,37 +239,36 @@ body a {
 }
 
 .bullets {
-    margin-top: 38px;
-    width: 550px;
-    height: 133px;
+    margin-top: 28px;
 }
 
 .desktop-bullets {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     float: left;
-    font-size: 20px;
     width: 265px;
     height: 60px;
     padding-left: 28px;
-    background: url(./../img/main/bullet.svg) no-repeat;
+    background: url(./../img/main/bullet.svg) 0 center no-repeat;
 }
 
-.first-bullet {
-    width: 265px;
-    height: 40px;
+.desktop-bullets p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
 }
 
+.desktop-bullets span {
+    font-weight: 500;
+}
+
+.first-bullet,
 .second-bullet {
-    width: 240px;
-    height: 20px;
+    margin-bottom: 23px;
 }
 
+.first-bullet,
 .third-bullet {
-    width: 265px;
-    height: 60px;
-}
-
-.fourth-bullet {
-    width: 256px;
-    height: 60px;
+    margin-right: 29px;
 }
