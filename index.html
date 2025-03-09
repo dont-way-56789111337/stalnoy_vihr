@@ -26,7 +26,7 @@
                     <div class="block">
                         <div class="nav__logo">
                             <a href="#!"><img src="./img/header/logo.png" class="logo"></a>
-                            <a href="#!"><h1 class="logo">Стальной<br>Вихрь</h1></a>
+                            <a href="#!"><h1 class="logo-text">Стальной<br>Вихрь</h1></a>
                         </div>
                         <ul class="nav__list">
                             <li><a href="#!" class="active">Главная</a></li>
@@ -73,20 +73,39 @@
                     </div>
                 </div>
                 <div class="description__slider">
-                    <ul class="slides">
-                        <li>
+                    <div class="slider-objects">
+                        <div class="slider-nav">
+                            <label for="s1" class="slider-nav-object arrow-left"></label>
+                            <label for="s2" class="slider-nav-object arrow-right"></label>
+                        </div>
+
+                        <input type="radio" name="s" id="s1">
+                        <input type="radio" name="s" id="s2">
+
+                        <div class="object s1">
                             <img src="./img/main/slider/primer1.png" alt="Пример работы наших мастеров №1">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="object s2">
                             <img src="./img/main/slider/primer2.png" alt="Пример работы наших мастеров №2">
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <h5 class="description__slider-text">Работы наших мастеров</h5>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-
+        <div class="container">
+            <div class="footer-info">
+                <p class="footer-info-text">
+                    Внимание! Этот сайт предназначен исключительно для образовательных целей. Он не является реальным магазином, и все товары, представленные здесь, являются виртуальными изображениями и не имеют материальной ценности. Все изображения были взяты из открытых источников и используются только для демонстрации ассортимента. Автор этого сайта не претендует на авторские права на них. Автор не несёт ответственности за возможные убытки или проблемы, связанные с использованием информации или материалов, представленных на сайте.
+                </p>
+                <div class="footer-info-logo">
+                    <img src="./img/header/logo.png" class="logo">
+                    <h1 class="logo-text">Стальной<br>Вихрь</h1>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
