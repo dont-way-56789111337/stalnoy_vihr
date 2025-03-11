@@ -23,18 +23,22 @@ body h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.2px;
 }
 
+body h4 {
+    font-size: 18px;
+}
+
 body h5 {
     font-size: 17px;
     color: var(--secondary);
 }
 
-body a {
-    color: inherit;
+body h6 {
+    font-size: 13px;
+    color: var(--secondary);
 }
 
-/* none пригодится, чтобы сайт верстать по частям */
-.none {
-    display: none !important;
+body a {
+    color: inherit;
 }
 
 .container {
@@ -44,10 +48,12 @@ body a {
 }
 
 
-/* Header */
+
+/* HEADER */
 
 
-.header {
+
+header {
     position: relative;
     max-width: var(--container-width);
     min-height: 160px;
@@ -55,7 +61,11 @@ body a {
     margin: 0 auto;
 }
 
-.header__top {
+
+/* HEADER top */
+
+
+.header-top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,16 +75,7 @@ body a {
     margin-bottom: 12px;
 }
 
-.header__top h4 {
-    font-size: 18px;
-}
-
-.header__top h6 {
-    font-size: 13px;
-    color: var(--secondary);
-}
-
-.adres {
+.header-top__adres {
     position: absolute;
     align-items: center;
     white-space: nowrap;
@@ -82,7 +83,7 @@ body a {
     left: 10px;
 }
 
-.contact {
+.header-top__contact {
     position: absolute;
     display: inline-block;
     align-items: center;
@@ -90,7 +91,7 @@ body a {
     
 }
 
-.our-social-networks {
+.header-top__our-social-networks {
     position: absolute;
     display: flex;
     align-items: center;
@@ -98,9 +99,13 @@ body a {
     right: 10px;
 }
 
-.our-social-networks img {
+.header-top__our-social-networks img {
     max-width: 30px;
     max-height: 30px;
+}
+
+.header-top__our-social-networks__text {
+    margin: 8.5px 0;
 }
 
 .vk-logo {
@@ -111,24 +116,24 @@ body a {
     margin: 5px 0 3px 0;
 }
 
-.social-networks {
-    margin: 8.5px 0;
-}
 
-.header__bottom {
+/* HEADER bottom */
+
+
+.header-bottom {
     min-height: 110px;
     margin: 0 -10px;
 }
 
 /* Nav */
 
-.nav {
+.header-bottom__nav {
     display: flex;
     position: relative;
     column-gap: 80px;
 }
 
-.block {
+.header-bottom__nav__block {
     display: flex;
     align-items: center;
     width: var(--container-width);
@@ -137,7 +142,9 @@ body a {
     background-color: #fff;
 }
 
-.nav__logo {
+/* Logo */
+
+.header-bottom__nav__block__logo {
     position: absolute;
     display: flex;
     align-items: center;
@@ -146,19 +153,18 @@ body a {
     left: 30px;
 }
 
-/* Logo */
-
-.nav__logo img {
+.header-bottom__nav__block__logo img {
     height: 70px;
     width: 70px;
 }
 
-.nav__logo h1 {
-    height: 56px;
+.header-bottom__nav__block__logo h1 {
     margin: 0 var(--nav-margin);
 }
 
-.nav__list {
+/* Menu */
+
+.header-bottom__nav__block__list {
     position: absolute;
     display: flex;
     align-items: center;
@@ -171,17 +177,17 @@ body a {
     column-gap: 43px;
 }
 
-.nav__list a {
+.header-bottom__nav__block__list a {
     position: relative;
     max-height: 29px;
 }
 
-.nav__list a.active {
+.header-bottom__nav__block__list a.active {
     color: var(--ternary);
 }
 
-.nav__list a.active::after,
-.nav__list a.inactive:hover::after {
+.header-bottom__nav__block__list a.active::after,
+.header-bottom__nav__block__list a.inactive:hover::after {
     content: "";
     position: absolute;
     display: block;
@@ -193,7 +199,9 @@ body a {
 }
 
 
-/* Main */
+
+/* MAIN */
+
 
 
 .description {
@@ -362,7 +370,9 @@ body a {
 }
 
 
-/* Footer */
+
+/* FOOTER */
+
 
 
 footer {
@@ -395,6 +405,5 @@ footer {
 }
 
 .footer-info-logo h1 {
-    height: 56px;
     margin: 87px 0 87px var(--nav-margin);
 }
