@@ -17,7 +17,7 @@ body a {
     color: inherit;
 }
 
-.container {
+.container-main {
     width: 1300px;
     padding: 0 10px 0;
     margin: 0 auto;
@@ -31,7 +31,6 @@ body a {
 
 header {
     position: relative;
-    max-width: 1300px;
     min-height: 160px;
     padding: 10px 0 0;
     margin: 0 auto;
@@ -43,46 +42,35 @@ header {
 
 .header-top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: rgba(48, 48, 48, 0.75);
+    font-size: 17px;
     font-weight: 400;
-    min-height: 38px;
+    height: 38px;
     margin-bottom: 12px;
 }
 
 .header-top__adres {
-    position: absolute;
-    align-items: center;
-    white-space: nowrap;
     height: 21px;
-    font-size: 17px;
-    color: rgba(48, 48, 48, 0.75);
-    left: 10px;
-}
-
-.header-top__contact-info {
-    position: absolute;
-    display: inline-block;
-    align-items: center;
-    white-space: nowrap;
 }
 
 .header-top__contact-info__working-hours {
     font-size: 13px;
-    color: rgba(48, 48, 48, 0.75);
 }
 
 .header-top__contact-info__telephone {
+    color: #303030;
     font-size: 18px;
 }
 
 .header-top__our-social-networks {
-    position: absolute;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    white-space: nowrap;
-    right: 10px;
+    width: 205px;
+    height: 30px;
 }
 
 .header-top__our-social-networks img {
@@ -90,40 +78,24 @@ header {
     max-height: 30px;
 }
 
-.header-top__our-social-networks__text {
-    font-size: 17px;
-    color: rgba(48, 48, 48, 0.75);
-    margin: 8.5px 0;
-}
-
-.vk-logo {
-    margin: 5px 10px 3px 10px;
-}
-
-.tg-logo {
-    margin: 5px 0 3px 0;
-}
-
 
 /* HEADER bottom */
 
 
 .header-bottom {
+    display: flex;
+    align-items: center;
     min-height: 110px;
     margin: 0 -10px;
 }
 
 /* Nav */
 
-.header-bottom__nav {
-    display: flex;
-    position: relative;
-    column-gap: 80px;
-}
-
 .header-bottom__nav__block {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
     width: 1300px;
     height: 110px;
     border-radius: 10px;
@@ -133,32 +105,26 @@ header {
 /* Logo */
 
 .header-bottom__nav__block__logo {
-    position: absolute;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 193.25px;
+    height: 70px;
     font-size: 23px;
     font-weight: 600;
-    left: 30px;
 }
 
 .header-bottom__nav__block__logo img {
-    height: 70px;
     width: 70px;
-}
-
-.header-bottom__nav__block__logo h1 {
-    margin: 0 20px;
+    height: 70px;
 }
 
 /* Menu */
 
 .header-bottom__nav__block__list {
-    position: absolute;
     display: flex;
-    align-items: center;
-    width: auto;
+    width: 647px;
     height: 29px;
-    right: 30px;
     font-size: 25px;
     font-weight: 500;
     line-height: 100%;
@@ -178,12 +144,10 @@ header {
 .header-bottom__nav__block__list a.inactive:hover::after {
     content: "";
     position: absolute;
-    display: block;
     left: 0;
     right: 0;
     bottom: 0;
     border-bottom: 2px solid #FF6464;
-    border-radius: 50px;
 }
 
 
@@ -194,12 +158,13 @@ header {
 
 .description {
     display: flex;
+    justify-content: space-between;
     padding: 30px 0 57px;
 }
 
 .description__content {
-    max-width: 640px;
-    max-height: 782px;
+    width: 640px;
+    height: 713px;
 }
 
 .description__content__store-description {
@@ -211,10 +176,9 @@ header {
 }
 
 .description__content__store-description__special-offer {
-    max-width: 550px;
-    max-height: 60px;
+    width: 550px;
+    height: 60px;
     font-size: 20px;
-    font-weight: 500;
     line-height: 150%;
     margin: 27px 0 31px;
 }
@@ -226,7 +190,7 @@ header {
 .btn {
     display: inline-block;
     padding: 24px 78px;
-    background: linear-gradient(to left, #C83B3B, #FF6464);
+    background: linear-gradient(to left top, #C83B3B, #FF6464);
     width: 328px;
     height: 82px;
     border-radius: 7px;
@@ -242,7 +206,6 @@ header {
 .bullet {
     display: flex;
     align-items: center;
-    box-sizing: border-box;
     float: left;
     width: 265px;
     height: 60px;
@@ -275,58 +238,49 @@ header {
 .description__slider {
     position: relative;
     overflow: hidden;
-    max-width: 490px;
+    width: 535px;
     height: 537px;
-    margin: 32px 0 0 150px;
+    margin-top: 28px;
 }
 
-.description__slider__slider-objects {
-    width: 980px;
-    height: 500px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+.description__slider__slider-objects__main-objects {
     display: flex;
+    width: 1100px;
+    height: 500px;
 }
 
-.description__slider__slider-objects .description__slider__slider-objects__img {
+.description__slider__slider-objects__main-objects__img {
     width: 50%;
-    -webkit-transition: .7s;
-    -o-transition: .7s;
-    transition: .7s;
+    -webkit-transition: .9s;
+    -o-transition: .9s;
+    transition: .9s;
 }
 
-.description__slider__slider-objects .description__slider__slider-objects__img img {
-    max-width: 100%;
+.description__slider__slider-objects__main-objects__img img {
+    max-width: 490px;
     height: 500px;
     border-radius: 10px;
+    margin-left: 23px;
 }
 
-.description__slider__slider-objects input {
+.description__slider__slider-objects__main-objects input {
     position: absolute;
     visibility: hidden;
 }
 
 .description__slider__slider-objects__nav {
     position: absolute;
-    bottom: 15px;
     width: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 227.5px 0;
 }
 
 .arrow-left {
-    margin: 0 7px 30px 0;
     background: url(./../img/main/slider/arrow_left.svg) center no-repeat #fff;
 }
 
 .arrow-right {
-    margin: 0 0 30px 7px;
     background: url(./../img/main/slider/arrow_right.svg) center no-repeat #fff;
 }
 
@@ -354,6 +308,7 @@ header {
 
 .description__slider__text {
     text-align: center;
+    color: rgba(48, 48, 48, 0.75);
     padding-top: 16px;
 }
 
@@ -367,10 +322,10 @@ footer {
     display: flex;
     position: relative;
     background-color: rgba(211, 211, 211, 0.5);
+    background-attachment: fixed;
     font-size: 23px;
     font-weight: 700;
-    width: 100%;
-    height: 230px;
+    min-height: 230px;
 }
 
 .footer-info {
@@ -385,14 +340,14 @@ footer {
 
 .footer-info__logo {
     display: flex;
+    margin: 80px 0 80px 27px;
 }
 
 .footer-info__logo img {
     height: 70px;
     width: 70px;
-    margin: 80px 0 80px 27px;
 }
 
 .footer-info__logo h1 {
-    margin: 87px 0 87px 20px;
+    margin: 7px 0 7px 20px;
 }
