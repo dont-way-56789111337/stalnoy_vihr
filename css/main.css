@@ -13,6 +13,11 @@ body h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.2px;
 }
 
+body h2 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
 body a {
     color: inherit;
 }
@@ -110,8 +115,6 @@ header {
     align-items: center;
     width: 193.25px;
     height: 70px;
-    font-size: 23px;
-    font-weight: 600;
 }
 
 .header-bottom__nav__block__logo img {
@@ -319,35 +322,36 @@ header {
 
 
 footer {
-    display: flex;
-    position: relative;
-    background-color: rgba(211, 211, 211, 0.5);
-    background-attachment: fixed;
     font-size: 23px;
     font-weight: 700;
-    min-height: 230px;
+}
+
+.container-footer {
+    min-width: 1300px;
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 .footer-info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
 }
 
 .footer-info__text {
-    width: 1060px;
+    width: 1000px;
     height: 196px;
-    margin: 17px 0;
 }
 
 .footer-info__logo {
     display: flex;
-    margin: 80px 0 80px 27px;
+    justify-content: space-between;
+    align-items: center;
+    width: 193.25px;
+    height: 70px;
 }
 
 .footer-info__logo img {
     height: 70px;
     width: 70px;
-}
-
-.footer-info__logo h1 {
-    margin: 7px 0 7px 20px;
 }
