@@ -352,8 +352,7 @@ header {
 }
 
 .znachki-tovarov {
-    width: 1200px;
-    height: 770px;
+    height: 768px;
     margin: 0 auto;
     padding: 16px 0 0;
     display: flex;
@@ -367,8 +366,8 @@ header {
 }
 
 .znachok {
-    width: 100%;
-    height: 100%;
+    width: 326px;
+    height: 326px;
     background-color: #fff;
     border-radius: 15px;
     font-weight: 500;
@@ -382,6 +381,58 @@ header {
 .fotka-znacka {
     width: 200px;
     height: 200px;
+}
+
+.znachki-tovarov-tuning {
+    height: 1144px;
+    margin: 0 auto;
+    padding: 16px 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.znachki-tovarov-tuning a {
+    width: 326px;
+    height: 326px;
+}
+
+.dtk-catalog {
+    height: 1500px;
+    padding: 20px 0 0;
+}
+
+.dtk-description {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.dtk-catalog__objects {
+    height: auto;
+    padding: 33px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dtk-catalog__objects_nav {
+    width: 220px;
+    height: 320px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.dtk-catalog__objects_products {
+    height: 921px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product {
+    width: 1030px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: #fff;
 }
 
 
