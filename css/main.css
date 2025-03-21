@@ -398,8 +398,9 @@ header {
 }
 
 .dtk-catalog {
-    height: 1500px;
-    padding: 20px 0 0;
+    height: 100%;
+    padding: 20px 0 120px;
+    overflow: hidden;
 }
 
 .dtk-description {
@@ -416,23 +417,135 @@ header {
 
 .dtk-catalog__objects_nav {
     width: 220px;
-    height: 320px;
+    height: 100%;
     border-radius: 15px;
     background-color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dtk-catalog__objects_nav label{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.fghjk{
+    display: none;
+}
+
+.popfg {
+    width: 18px;
+    height: 18px;
+    background-color: #FF6464;
+}
+
+.dtk-catalog__objects_nav article{
+    overflow: hidden;
+    height: 0px;
+}
+.dtk-catalog__objects_nav input:checked ~ article{
+    height: 100%;
+}
+
+.dtk-catalog__objects_nav article p {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.obezyanik {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hueta {
+    display: flex;
+    align-items: center;
+    background: url(./../img/catalog/Arrow.svg) 0 center no-repeat;
+    width: 8px;
+    height: 5px;
 }
 
 .dtk-catalog__objects_products {
-    height: 921px;
+    max-height: 5000px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    row-gap: 30px;
 }
 
 .product {
     width: 1030px;
-    height: 160px;
+    min-height: 160px;
     border-radius: 15px;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-content {
+    width: 970px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.product-content-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+}
+
+.product-content-description img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-content-description-text {
+    width: 650px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.product-content-description-text p {
+    height: 24px;
+}
+
+.product-content-description-text span {
+    font-size: 15px;
+    max-height: 76px;
+    line-height: 105%;
+    color: rgba(48, 48, 48, 0.75);
+}
+
+.product-content-price {
+    width: 117px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: 500;
+}
+
+.btn-catalog {
+    width: 117px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303030;
+    border-radius: 7px;
 }
 
 
