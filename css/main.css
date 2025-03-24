@@ -517,6 +517,10 @@ header {
     row-gap: 5px;
 }
 
+.gavno {
+    overflow: hidden;
+}
+
 .product-content-description-text p {
     height: 24px;
 }
