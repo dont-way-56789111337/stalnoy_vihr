@@ -28,6 +28,10 @@ body a {
     margin: 0 auto;
 }
 
+main {
+    min-height: 800px;
+}
+
 
 
 /* HEADER */
@@ -550,6 +554,122 @@ header {
     justify-content: center;
     border: 1px solid #303030;
     border-radius: 7px;
+}
+
+/* Basket */
+
+.basket-content {
+    padding-top: 30px;
+}
+
+.zalupen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.basket-content_text {
+    height: 49px;
+    font-size: 40px;
+}
+
+.basket-content_text span {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.basket-content_main_card {
+    width: 870px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-content_main_card_items {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-content_main_card_items_product {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket-content_main_card_items_product img {
+    width: 100px;
+    height: 100px;
+}
+
+.basket-content_main_card_items_product_text {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.basket-content_main_card_items_product_text_name {
+    height: 24.41px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.basket-content_main_card_items_cross {
+    margin-top: 10px;
+    background: url(./../img/basket/cross.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.basket-content_button {
+    width: 320px;
+    height: 176px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-content_button_items {
+    width: 282px;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.basket-content_button_items_text {
+    width: 282px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.basket-content_button_items_text_quantity_result-text {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(48, 48, 48, 0.75);
+}
+
+.basket-content_button_items_button {
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
