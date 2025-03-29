@@ -435,14 +435,8 @@ header {
     align-items: center;
 }
 
-.fghjk{
+.fghjk {
     display: none;
-}
-
-.popfg {
-    width: 18px;
-    height: 18px;
-    background-color: #FF6464;
 }
 
 .dtk-catalog__objects_nav article{
@@ -466,7 +460,7 @@ header {
     justify-content: space-evenly;
 }
 
-.hueta {
+.parametr {
     display: flex;
     align-items: center;
     background: url(./../img/catalog/Arrow.svg) 0 center no-repeat;
@@ -521,7 +515,7 @@ header {
     row-gap: 5px;
 }
 
-.gavno {
+.product-content-description-text p {
     overflow: hidden;
 }
 
@@ -562,7 +556,7 @@ header {
     padding-top: 30px;
 }
 
-.zalupen {
+.chtoto {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
